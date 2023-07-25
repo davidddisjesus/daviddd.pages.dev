@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneStream</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>PhoneStream</h1>
+    </header>
+
+    <div class="panel">
+        <h2>Select the phone you'd like to stream.</h2>
+        <div class="phone-buttons">
+            <button onclick="redirectTo('http://192.168.0.47:8080')">Nathan's Phone</button>
+            <button onclick="redirectTo('http://192.168.0.36:8080')">Angel's Phone</button>
+            <button onclick="redirectTo('http://192.168.0.29:8080')">Jesus's Phone</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> David Waldrop, all rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
