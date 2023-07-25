@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhoneStream</title>
+    <link href="./assets/favicon.png" rel="shortcut icon" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,10 +17,20 @@
     <div class="panel">
         <h2>Select the phone you'd like to stream.</h2>
         <div class="phone-buttons">
-            <button onclick="redirectTo('http://192.168.0.47:8080')">Nathan's Phone</button>
-            <button onclick="redirectTo('http://192.168.0.36:8080')">Angel's Phone</button>
-            <button onclick="redirectTo('http://192.168.0.29:8080')">Jesus's Phone</button>
+            <button class="button-regular" onclick="redirectTo('http://192.168.0.22:8080')">Nathan's Phone</button>
+            <button class="button-regular" onclick="redirectTo('http://192.168.0.36:8080')">Angel's Phone</button>
+            <button class="button-regular" onclick="redirectTo('http://192.168.0.29:8080')">Jesus's Phone</button>
         </div>
+    </div>
+
+    <div id="message" class="message"></div>
+
+    <button id="aboutButton" class="about-button">ⓘ</button>
+
+    <div id="dialogContainer" class="dialog-container">
+      <button id="closeButton" class="close-button">&times;</button>
+      <h2 id="dialogTitle" class="dialog-title">About</h2>
+      <p id="dialogBody" class="dialog-body">PhoneStream v<span id="version" class="version"></span><br>A quick tool to view phone stuff.</p>
     </div>
 
     <footer>
