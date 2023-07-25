@@ -35,7 +35,7 @@ const loadingContent = document.createElement('div');
 loadingContent.setAttribute('class', 'loading-content');
 
 const loadingImage = document.createElement('img');
-loadingImage.src = './assets/load.png';
+loadingImage.src = './assets/load.png?v=1';
 
 const loadingText = document.createElement('p');
 loadingText.textContent = 'Loading...';
